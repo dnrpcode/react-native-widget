@@ -22,6 +22,7 @@
     "@react-native/metro-config": "^0.72.11",
     "@tsconfig/react-native": "^3.0.0",
     "@types/react": "^18.0.24",
+    "@types/react-native-shared-group-preferences": "^1.1.1",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.2.1",
     "eslint": "^8.19.0",

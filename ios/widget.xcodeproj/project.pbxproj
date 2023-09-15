@@ -14,6 +14,15 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-widget-widgetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-widget-widgetTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CF2683622AB3D5AE00A67B01 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2683612AB3D5AE00A67B01 /* WidgetKit.framework */; };
+		CF2683642AB3D5AE00A67B01 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2683632AB3D5AE00A67B01 /* SwiftUI.framework */; };
+		CF2683672AB3D5AE00A67B01 /* widgetkuBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2683662AB3D5AE00A67B01 /* widgetkuBundle.swift */; };
+		CF2683692AB3D5AE00A67B01 /* widgetkuLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2683682AB3D5AE00A67B01 /* widgetkuLiveActivity.swift */; };
+		CF26836B2AB3D5AE00A67B01 /* widgetku.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26836A2AB3D5AE00A67B01 /* widgetku.swift */; };
+		CF26836E2AB3D5B100A67B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF26836D2AB3D5B100A67B01 /* Assets.xcassets */; };
+		CF2683702AB3D5B100A67B01 /* widgetku.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF26836C2AB3D5AE00A67B01 /* widgetku.intentdefinition */; };
+		CF2683712AB3D5B100A67B01 /* widgetku.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF26836C2AB3D5AE00A67B01 /* widgetku.intentdefinition */; };
+		CF2683742AB3D5B100A67B01 /* widgetkuExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CF2683602AB3D5AE00A67B01 /* widgetkuExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +33,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = widget;
 		};
+		CF2683722AB3D5B100A67B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF26835F2AB3D5AE00A67B01;
+			remoteInfo = widgetkuExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF2683752AB3D5B100A67B01 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF2683742AB3D5B100A67B01 /* widgetkuExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* widgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = widgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +73,17 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-widget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-widget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = widget/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-widget-widgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widget-widgetTests.release.xcconfig"; path = "Target Support Files/Pods-widget-widgetTests/Pods-widget-widgetTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF2683602AB3D5AE00A67B01 /* widgetkuExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetkuExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2683612AB3D5AE00A67B01 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CF2683632AB3D5AE00A67B01 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CF2683662AB3D5AE00A67B01 /* widgetkuBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetkuBundle.swift; sourceTree = "<group>"; };
+		CF2683682AB3D5AE00A67B01 /* widgetkuLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetkuLiveActivity.swift; sourceTree = "<group>"; };
+		CF26836A2AB3D5AE00A67B01 /* widgetku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetku.swift; sourceTree = "<group>"; };
+		CF26836C2AB3D5AE00A67B01 /* widgetku.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widgetku.intentdefinition; sourceTree = "<group>"; };
+		CF26836D2AB3D5B100A67B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF26836F2AB3D5B100A67B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2683792AB3EA9300A67B01 /* widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = widget.entitlements; path = widget/widget.entitlements; sourceTree = "<group>"; };
+		CF26837A2AB3F3D600A67B01 /* widgetkuExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widgetkuExtension.entitlements; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +101,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-widget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26835D2AB3D5AE00A67B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2683642AB3D5AE00A67B01 /* SwiftUI.framework in Frameworks */,
+				CF2683622AB3D5AE00A67B01 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +136,7 @@
 		13B07FAE1A68108700A75B9A /* widget */ = {
 			isa = PBXGroup;
 			children = (
+				CF2683792AB3EA9300A67B01 /* widget.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -102,6 +153,8 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-widget.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-widget-widgetTests.a */,
+				CF2683612AB3D5AE00A67B01 /* WidgetKit.framework */,
+				CF2683632AB3D5AE00A67B01 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,9 +169,11 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CF26837A2AB3F3D600A67B01 /* widgetkuExtension.entitlements */,
 				13B07FAE1A68108700A75B9A /* widget */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* widgetTests */,
+				CF2683652AB3D5AE00A67B01 /* widgetku */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -133,6 +188,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* widget.app */,
 				00E356EE1AD99517003FC87E /* widgetTests.xctest */,
+				CF2683602AB3D5AE00A67B01 /* widgetkuExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +202,19 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-widget-widgetTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF2683652AB3D5AE00A67B01 /* widgetku */ = {
+			isa = PBXGroup;
+			children = (
+				CF2683662AB3D5AE00A67B01 /* widgetkuBundle.swift */,
+				CF2683682AB3D5AE00A67B01 /* widgetkuLiveActivity.swift */,
+				CF26836A2AB3D5AE00A67B01 /* widgetku.swift */,
+				CF26836C2AB3D5AE00A67B01 /* widgetku.intentdefinition */,
+				CF26836D2AB3D5B100A67B01 /* Assets.xcassets */,
+				CF26836F2AB3D5B100A67B01 /* Info.plist */,
+			);
+			path = widgetku;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,15 +253,34 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				CF2683752AB3D5B100A67B01 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF2683732AB3D5B100A67B01 /* PBXTargetDependency */,
 			);
 			name = widget;
 			productName = widget;
 			productReference = 13B07F961A680F5B00A75B9A /* widget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CF26835F2AB3D5AE00A67B01 /* widgetkuExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2683782AB3D5B100A67B01 /* Build configuration list for PBXNativeTarget "widgetkuExtension" */;
+			buildPhases = (
+				CF26835C2AB3D5AE00A67B01 /* Sources */,
+				CF26835D2AB3D5AE00A67B01 /* Frameworks */,
+				CF26835E2AB3D5AE00A67B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgetkuExtension;
+			productName = widgetkuExtension;
+			productReference = CF2683602AB3D5AE00A67B01 /* widgetkuExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,6 +288,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -208,6 +297,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					CF26835F2AB3D5AE00A67B01 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
@@ -226,6 +318,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* widget */,
 				00E356ED1AD99517003FC87E /* widgetTests */,
+				CF26835F2AB3D5AE00A67B01 /* widgetkuExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +337,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26835E2AB3D5AE00A67B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF26836E2AB3D5B100A67B01 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,8 +513,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2683712AB3D5B100A67B01 /* widgetku.intentdefinition in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26835C2AB3D5AE00A67B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2683692AB3D5AE00A67B01 /* widgetkuLiveActivity.swift in Sources */,
+				CF2683672AB3D5AE00A67B01 /* widgetkuBundle.swift in Sources */,
+				CF2683702AB3D5B100A67B01 /* widgetku.intentdefinition in Sources */,
+				CF26836B2AB3D5AE00A67B01 /* widgetku.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +537,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* widget */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		CF2683732AB3D5B100A67B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF26835F2AB3D5AE00A67B01 /* widgetkuExtension */;
+			targetProxy = CF2683722AB3D5B100A67B01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -483,9 +601,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-widget.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YK45G98794;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,9 +631,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-widget.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YK45G98794;
 				INFOPLIST_FILE = widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,6 +794,88 @@
 			};
 			name = Release;
 		};
+		CF2683762AB3D5B100A67B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = widgetkuExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YK45G98794;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widgetku/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widgetku;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.widget.widgetku;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF2683772AB3D5B100A67B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = widgetkuExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YK45G98794;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widgetku/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widgetku;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.widget.widgetku;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -696,6 +902,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2683782AB3D5B100A67B01 /* Build configuration list for PBXNativeTarget "widgetkuExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2683762AB3D5B100A67B01 /* Debug */,
+				CF2683772AB3D5B100A67B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
